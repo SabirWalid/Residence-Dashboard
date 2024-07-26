@@ -1,0 +1,39 @@
+{
+    "rooms": [{
+            "number": "101",
+            "resident": "John Doe",
+            "status": "Occupied",
+            "amenities": ["WiFi", "AC", "TV"]
+        },
+        {
+            "number": "102",
+            "resident": "Jane Smith",
+            "status": "Vacant",
+            "amenities": ["WiFi", "AC"]
+        },
+        {
+            "number": "103",
+            "resident": "Sam Wilson",
+            "status": "Under Maintenance",
+            "amenities": ["WiFi", "TV"]
+        }
+    ],
+    "maintenanceRequests": [{
+            "room": "103",
+            "status": "Ongoing",
+            "note": "Leaky faucet"
+        },
+        {
+            "room": "104",
+            "status": "Pending",
+            "note": "Broken window"
+        }
+    ],
+    "notifications": [
+        "Room 103 maintenance is ongoing",
+        "Inspection scheduled for Room 102",
+        "Urgent request from Room 101"
+    ],
+    "occupancyRates": [70, 20, 10],
+    "roomTypes": [50, 30, 20]
+}

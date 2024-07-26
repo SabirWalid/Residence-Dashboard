@@ -1,0 +1,195 @@
+body {
+    background-color: #80AF81;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #D6EFD8;
+}
+
+.sidebar .nav-link {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.theme-switcher {
+    cursor: pointer;
+}
+
+.theme-switcher i,
+.notifications i,
+.input-group-text i {
+    color: #000;
+}
+
+.notifications i {
+    font-size: 18px;
+}
+
+section.dashboard h1,
+section.rooms h1 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+section.dashboard h2,
+section.rooms h2,
+section.maintenance h2 {
+    margin-bottom: 10px;
+    color: #000;
+}
+
+canvas {
+    width: 100% !important;
+    height: 400px !important;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    /* Light theme table text color */
+}
+
+.table thead th {
+    background-color: #343a40;
+    color: #fff;
+    /* Light theme table header text color */
+}
+
+
+/* Dark Theme Styles */
+
+.dark-theme {
+    background-color: #343a40;
+    color: #fff;
+    /* Dark theme default text color */
+}
+
+.dark-theme .sidebar {
+    background-color: #23272b;
+    /* Dark theme sidebar color */
+}
+
+.dark-theme .sidebar .nav-link {
+    color: #fff;
+    /* Dark theme nav link color */
+}
+
+.dark-theme .main-content {
+    background-color: #343a40;
+    /* Dark theme main content background color */
+    color: #fff;
+    /* Dark theme main content text color */
+}
+
+.dark-theme header {
+    background-color: #23272b;
+    /* Dark theme header background color */
+    border-bottom: 1px solid #343a40;
+}
+
+.dark-theme .table {
+    color: #fff;
+    /* Dark theme table text color */
+}
+
+.dark-theme .table thead th {
+    background-color: #495057;
+    /* Dark theme table header background color */
+    color: #fff;
+    /* Dark theme table header text color */
+}
+
+.dark-theme .theme-switcher i,
+.dark-theme .notifications i,
+.dark-theme .input-group-text i {
+    color: #fff;
+    /* Dark theme icon color */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    /* Center the logo horizontally */
+    align-items: center;
+    /* Center the logo vertically */
+}
+
+.logo-img {
+    width: 100%;
+    /* Make the image responsive */
+    max-width: 100px;
+    /* Limit the maximum width */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 50%;
+    /* Make the image round */
+    object-fit: cover;
+    /* Ensure the image covers the container */
+}
+
+
+/* Styles for dropdown buttons */
+
+.btn-group {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-group .btn {
+    border-radius: 20px;
+    /* Rounded corners */
+    border: 2px solid #485A48;
+    /* Border color */
+    color: #485A48;
+    /* Button text color */
+}
+
+.btn-group .btn:hover {
+    background-color: #485A48;
+    /* Background color on hover */
+    color: #fff;
+    /* Text color on hover */
+}
+
+.btn-group .dropdown-menu {
+    border-radius: 20px;
+    /* Rounded corners */
+    padding: 0;
+}
+
+.btn-group .dropdown-item {
+    border-radius: 15px;
+    color: #485A48;
+    /* Text color for dropdown items */
+}
+
+.btn-group .dropdown-item:hover {
+    background-color: #485A48;
+    /* Background color on hover */
+    color: #fff;
+    /* Text color on hover */
+}
+
+.nav-link.active {
+    background-color: #485A48;
+    color: #ffffff !important;
+    border-radius: 20px;
+    padding: 10px;
+}
