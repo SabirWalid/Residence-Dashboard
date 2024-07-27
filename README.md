@@ -23,4 +23,3 @@ Clean and Commented Code: Well-structured and documented codebase using HTML, CS
 Mock API Integration (Optional): A basic mock API (local JSON file) to simulate data retrieval.
 Project Documentation: A brief document outlining the project setup, technical choices, usage instructions, and any external libraries used.
 }
-
