@@ -1,5 +1,5 @@
 body {
-    background-color: #8c8d3c;
+    background-color: #88f;
     margin: 0;
     padding: 0;
     color: #000;
@@ -193,6 +193,7 @@ canvas {
     border-radius: 20px;
     padding: 10px;
 }
+
 .table-responsive {
     overflow-x: auto;
 }
@@ -200,4 +201,3 @@ canvas {
 .table-responsive .table {
     margin-bottom: 0;
 }
-

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize charts if their elements exist
-    const ctxRoomTypes = document.getElementById('roomTypesChart')?.getContext('2d');
+    const ctxRoomTypes = document.getElementById('roomTypesChart') ? .getContext('2d');
     if (ctxRoomTypes) {
         new Chart(ctxRoomTypes, {
             type: 'pie',
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const ctxMaintenance = document.getElementById('maintenanceChart')?.getContext('2d');
+    const ctxMaintenance = document.getElementById('maintenanceChart') ? .getContext('2d');
     if (ctxMaintenance) {
         new Chart(ctxMaintenance, {
             type: 'bar',
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const ctxOccupancy = document.getElementById('occupancyChart')?.getContext('2d');
+    const ctxOccupancy = document.getElementById('occupancyChart') ? .getContext('2d');
     if (ctxOccupancy) {
         new Chart(ctxOccupancy, {
             type: 'bar',
