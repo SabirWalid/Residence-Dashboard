@@ -1,23 +1,30 @@
 body {
-    background-color: #88f;
+    background-color: #8c8d3c;
     margin: 0;
     padding: 0;
-    color: #000;
+    color: #333;
+    font-family: 'Livvic', sans-serif;
 }
 
 .sidebar {
     width: 250px;
     min-height: 100vh;
-    background-color: #D6EFD8;
+    background-color: #343a40;
 }
 
 .sidebar .nav-link {
     font-size: 18px;
-    color: #ffffff;
+    color: #adb5bd;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #495057;
+    color: #fff;
 }
 
 .main-content {
     padding: 20px;
+    background-color: #ffffff;
 }
 
 header {
@@ -34,7 +41,7 @@ header {
 .theme-switcher i,
 .notifications i,
 .input-group-text i {
-    color: #000;
+    color: #6c757d;
 }
 
 .notifications i {
@@ -44,14 +51,14 @@ header {
 section.dashboard h1,
 section.rooms h1 {
     margin-bottom: 20px;
-    color: #000;
+    color: #343a40;
 }
 
 section.dashboard h2,
 section.rooms h2,
 section.maintenance h2 {
     margin-bottom: 10px;
-    color: #000;
+    color: #343a40;
 }
 
 canvas {
@@ -63,13 +70,11 @@ canvas {
     width: 100%;
     margin-bottom: 1rem;
     color: #212529;
-    /* Light theme table text color */
 }
 
 .table thead th {
     background-color: #343a40;
     color: #fff;
-    /* Light theme table header text color */
 }
 
 
@@ -78,74 +83,59 @@ canvas {
 .dark-theme {
     background-color: #343a40;
     color: #fff;
-    /* Dark theme default text color */
 }
 
 .dark-theme .sidebar {
     background-color: #23272b;
-    /* Dark theme sidebar color */
 }
 
 .dark-theme .sidebar .nav-link {
+    color: #adb5bd;
+}
+
+.dark-theme .sidebar .nav-link:hover {
+    background-color: #495057;
     color: #fff;
-    /* Dark theme nav link color */
 }
 
 .dark-theme .main-content {
-    background-color: #343a40;
-    /* Dark theme main content background color */
-    color: #fff;
-    /* Dark theme main content text color */
+    background-color: #23272b;
+    color: #adb5bd;
 }
 
 .dark-theme header {
     background-color: #23272b;
-    /* Dark theme header background color */
     border-bottom: 1px solid #343a40;
 }
 
 .dark-theme .table {
-    color: #fff;
-    /* Dark theme table text color */
+    color: #adb5bd;
 }
 
 .dark-theme .table thead th {
     background-color: #495057;
-    /* Dark theme table header background color */
-    color: #fff;
-    /* Dark theme table header text color */
+    color: #adb5bd;
 }
 
 .dark-theme .theme-switcher i,
 .dark-theme .notifications i,
 .dark-theme .input-group-text i {
-    color: #fff;
-    /* Dark theme icon color */
+    color: #adb5bd;
 }
 
 .logo {
     display: flex;
     justify-content: center;
-    /* Center the logo horizontally */
     align-items: center;
-    /* Center the logo vertically */
 }
 
 .logo-img {
     width: 100%;
-    /* Make the image responsive */
     max-width: 100px;
-    /* Limit the maximum width */
     height: auto;
-    /* Maintain aspect ratio */
     border-radius: 50%;
-    /* Make the image round */
     object-fit: cover;
-    /* Ensure the image covers the container */
 }
-
-
-/* Styles for dropdown buttons */
 
 .btn-group {
     position: relative;
@@ -154,41 +144,32 @@ canvas {
 
 .btn-group .btn {
     border-radius: 20px;
-    /* Rounded corners */
-    border: 2px solid #485A48;
-    /* Border color */
-    color: #485A48;
-    /* Button text color */
+    border: 2px solid #495057;
+    color: #495057;
 }
 
 .btn-group .btn:hover {
-    background-color: #485A48;
-    /* Background color on hover */
+    background-color: #495057;
     color: #fff;
-    /* Text color on hover */
 }
 
 .btn-group .dropdown-menu {
     border-radius: 20px;
-    /* Rounded corners */
     padding: 0;
 }
 
 .btn-group .dropdown-item {
     border-radius: 15px;
-    color: #485A48;
-    /* Text color for dropdown items */
+    color: #495057;
 }
 
 .btn-group .dropdown-item:hover {
-    background-color: #485A48;
-    /* Background color on hover */
+    background-color: #495057;
     color: #fff;
-    /* Text color on hover */
 }
 
 .nav-link.active {
-    background-color: #485A48;
+    background-color: #495057;
     color: #ffffff !important;
     border-radius: 20px;
     padding: 10px;

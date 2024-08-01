@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="https://img.icons8.com/?size=80&id=4CubskR8sRqG&format=png">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/?size=80&id=4CubskR8sRqG&format=png">
     <title>Residence-Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -16,80 +16,83 @@
     <div class="d-flex">
         <div class="sidebar p-3 sidenav" style="background-color: white;">
             <h5 class="text-center fw-bolder">Residence Dashboard</h5>
-            <div class="d-flex justify-content-center align-items-center mb-3">
-                <img src="https://img.icons8.com/?size=80&id=4CubskR8sRqG&format=png" alt="Logo" class="logo-img">
+            <div class="sidebar p-3 sidenav">
+                <h5 class="text-center fw-bolder text-light">Residence Dashboard</h5>
+                <div class="d-flex justify-content-center align-items-center mb-3">
+                    <img src="logo.jpeg" alt="Logo" class="logo-img">
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-left" href="index.html">
+                            <img src="https://img.icons8.com/?size=80&id=2p051aLcoRBQ&format=png" alt="" class="mr-2">Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-left" href="rooms.html">
+                            <img src="https://img.icons8.com/?size=80&id=IfWCEbxVdmLs&format=png" alt="" class="mr-2">Rooms
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-left" href="maintenance.html">
+                            <img src="https://img.icons8.com/?size=48&id=Nmro7wvN8ku9&format=png" alt="" class="mr-2">Maintenance
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-left" href="settings.html">
+                            <img src="https://img.icons8.com/?size=48&id=13108&format=png" alt="" class="mr-2">Settings
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                    <a class="nav-link text-left" style="color: black;" href="index.html">
-                        <img src="https://img.icons8.com/?size=80&id=2p051aLcoRBQ&format=png" alt="" class="mr-2">Dashboard
-                    </a>
-                </li>
-                <li class="nav-item mb-2">
-                    <a class="nav-link text-left" style="color: black;" href="rooms.html">
-                        <img src="https://img.icons8.com/?size=80&id=IfWCEbxVdmLs&format=png" alt="" class="mr-2">Rooms
-                    </a>
-                </li>
-                <li class="nav-item mb-2">
-                    <a class="nav-link text-left" style="color: black;" href="maintenance.html">
-                        <img src="https://img.icons8.com/?size=48&id=Nmro7wvN8ku9&format=png" alt="" class="mr-2">Maintenance
-                    </a>
-                </li>
-                <li class="nav-item mb-2">
-                    <a class="nav-link text-left" style="color: black;" href="settings.html">
-                        <img src="https://img.icons8.com/?size=48&id=13108&format=png" alt="" class="mr-2">Settings
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="main-content flex-grow-1 p-3">
-            <header class="d-flex justify-content-between align-items-center mb-4">
-                <div class="input-group w-50">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="basic-addon1">
-                </div>
-                <div class="d-flex align-items-center">
-                    <div class="theme-switcher mr-3">
-                        <i class="fas fa-sun"></i>
-                    </div>
-                    <div class="dropdown">
-                        <div class="notifications" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-bell"></i>
+            <div class="main-content flex-grow-1 p-3">
+                <header class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="input-group w-50">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
                         </div>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Notification 1</a>
-                            <a class="dropdown-item" href="#">Notification 2</a>
-                            <a class="dropdown-item" href="#">Notification 3</a>
+                        <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="theme-switcher mr-3">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="dropdown">
+                            <div class="notifications" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Notification 1</a>
+                                <a class="dropdown-item" href="#">Notification 2</a>
+                                <a class="dropdown-item" href="#">Notification 3</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </header>
-            <section class="dashboard mb-4">
-                <h1 class="text-white">Rooms Management</h1>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <h2 class="text-black">Rooms Types</h2>
-                        <canvas id="roomTypesChart"></canvas>
+                </header>
+                <section class="dashboard mb-4">
+                    <h1 class="text-dark">Rooms Management</h1>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h2 class="text-dark">Rooms Types</h2>
+                            <canvas id="roomTypesChart"></canvas>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h2 class="text-dark">Maintenance Requests</h2>
+                            <canvas id="maintenanceChart"></canvas>
+                        </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <h2 class="text-black">Maintenance Requests</h2>
-                        <canvas id="maintenanceChart"></canvas>
+                    <div class="occupancy-rates">
+                        <h2 class="text-dark">Occupancy Rates</h2>
+                        <canvas id="occupancyChart"></canvas>
                     </div>
-                </div>
-                <div class="occupancy-rates">
-                    <h2 class="text-black">Occupancy Rates</h2>
-                    <canvas id="occupancyChart"></canvas>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/app.js"></script>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="js/app.js"></script>
 </body>
 
 </html>

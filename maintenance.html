@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="https://img.icons8.com/?size=80&id=4CubskR8sRqG&format=png">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/?size=80&id=4CubskR8sRqG&format=png">
     <title>Residence Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -15,35 +15,48 @@
 
 <body>
     <div class="d-flex">
-        <div class="sidebar p-3 sidenav" style="background-color: #D6E;">
-            <h5 class="text-center fw-bolder">Residence Dashboard</h5>
+        <div class="sidebar p-3 sidenav">
+            <h5 class="text-center fw-bolder text-light">Residence Dashboard</h5>
             <div class="d-flex justify-content-center align-items-center mb-3">
-                <img src="https://img.icons8.com/?size=80&id=4CubskR8sRqG&format=png" alt="Logo" class="logo-img">
+                <img src="logo.jpeg" alt="Logo" class="logo-img">
             </div>
             <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                    <a class="nav-link text-left" style="color: black;" href="index.html">
+                    <a class="nav-link text-left" href="index.html">
                         <img src="https://img.icons8.com/?size=80&id=2p051aLcoRBQ&format=png" alt="" class="mr-2">Dashboard
                     </a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a class="nav-link text-left" style="color: black;" href="rooms.html">
+                    <a class="nav-link text-left" href="rooms.html">
                         <img src="https://img.icons8.com/?size=80&id=IfWCEbxVdmLs&format=png" alt="" class="mr-2">Rooms
                     </a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a class="nav-link text-left" style="color: black;" href="maintenance.html">
+                    <a class="nav-link text-left" href="maintenance.html">
                         <img src="https://img.icons8.com/?size=48&id=Nmro7wvN8ku9&format=png" alt="" class="mr-2">Maintenance
                     </a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a class="nav-link text-left" style="color: black;" href="settings.html">
+                    <a class="nav-link text-left" href="settings.html">
                         <img src="https://img.icons8.com/?size=48&id=13108&format=png" alt="" class="mr-2">Settings
                     </a>
                 </li>
             </ul>
         </div>
         <div class="main-content flex-grow-1 p-3">
+            <div class="fixed-dropdown">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle text-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ALL
+                    </button>
+                    <div class="dropdown-menu">
+                        <button class="dropdown-item" type="button" data-filter="All">All</button>
+                        <button class="dropdown-item" type="button" data-filter="status">Status</button>
+                        <button class="dropdown-item" type="button" data-filter="roomNumber">Room Number</button>
+                        <button class="dropdown-item" type="button" data-filter="priority">Priority</button>
+                    </div>
+                </div>
+            </div>
             <header class="d-flex justify-content-between align-items-center mb-4">
                 <div class="input-group w-50">
                     <div class="input-group-prepend">
@@ -64,18 +77,24 @@
                 </div>
             </header>
             <div class="notifications-list">
+                <!-- Notification messages will be displayed here -->
             </div>
-            <div class="d-block align-items-end">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-outline-secondary dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ALL
-                  </button>
-                    <div class="dropdown-menu">
-                        <button class="dropdown-item" type="button" data-filter="All">All</button>
-                        <button class="dropdown-item" type="button" data-filter="status">Status</button>
-                        <button class="dropdown-item" type="button" data-filter="roomNumber">RoomNumber</button>
-                        <button class="dropdown-item" type="button" data-filter="priority">Priority</button>
-                    </div>
+            <section class="col-12 maintenance-request mt-5">
+                <h2 class="text-center text-dark fw-bold">Maintenance Requests</h2>
+                <div class="table-container">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Room Number</th>
+                                <th scope="col">Request Date</th>
+                                <th scope="col">Issue Description</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Priority</th>
+                                <th scope="col">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="maintenance-table-body"></tbody>
+                    </table>
                 </div>
                 <section class="col-12 maintenance-request m-5">
                     <p class="text-center text-white fw-bold">Maintenance Request</p>
@@ -97,13 +116,13 @@
                 </section>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/app.js"></script>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
