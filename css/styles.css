@@ -1,14 +1,17 @@
+/* Existing CSS rules */
+
 :root {
-    --bg-light-color: #80AF81;
-    --bg-top-nav: #D6EFD8;
-    --bg-dark-body-color: #323432;
+    --bg-light-color: #f4f7f9;
+    --bg-top-nav: #343a40;
+    --bg-dark-body-color: #23272b;
     --bg-dark-top-nav: #1b1d1bc2;
-    --text-dark-top-nav: #ffff;
-    --text-light: #ffff;
+    --text-dark-top-nav: #ffffff;
+    --text-light: #ffffff;
 }
 
 body {
     background-color: var(--bg-light-color);
+    font-family: 'Livvic', sans-serif;
 }
 
 .top-nav {
@@ -16,6 +19,7 @@ body {
     width: 100%;
     height: 60px;
     margin-top: 10px;
+    color: var(--text-light);
 }
 
 .search-button {
@@ -47,6 +51,7 @@ body {
 .search-input {
     border: none;
     background-color: var(--bg-top-nav);
+    color: var(--text-light);
 }
 
 .search-input:active {
@@ -54,11 +59,12 @@ body {
 }
 
 .dark-mode {
-    background-color: var(--bg-dark-color);
+    background-color: var(--bg-dark-body-color);
+    color: var(--text-light);
 }
 
 .dark-mode-top-nav {
-    background-color: var(--bg-dark-body-color);
+    background-color: var(--bg-dark-top-nav);
     color: var(--text-dark-top-nav);
 }
 
@@ -96,7 +102,7 @@ body {
 }
 
 .notifications {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .notifications-list {
@@ -110,4 +116,58 @@ body {
         height: 60px;
         margin-top: 10px;
     }
+}
+
+/* Custom styles specific to rooms.html */
+
+.maintenance-request {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.table thead th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.table tbody td {
+    color: #333;
+}
+
+.text-dark {
+    color: #343a40 !important;
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+}
+
+.dropdown-item {
+    border-radius: 5px;
+    color: #495057;
+}
+
+.dropdown-item:hover {
+    background-color: #495057;
+    color: #fff;
+}
+
+
+
+.dropdown-container {
+    position: relative;
+    margin-bottom: 20px; /* Adjust as needed for spacing */
+}
+
+.fixed-dropdown {
+    position: center;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it's above other elements */
 }
