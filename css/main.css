@@ -173,3 +173,11 @@ canvas {
     border-radius: 20px;
     padding: 10px;
 }
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-responsive .table {
+    margin-bottom: 0;
+}
+

@@ -1,0 +1,153 @@
+
+@import "variables/navbar-vertical";
+@import "variables/social-buttons";
+@import "variables/breadcrumb";
+
+// Mixin
+@import "mixins/mixins";
+
+// Core Components - extra styling
+@import "alert";
+@import "avatars";
+@import "badge";
+@import "buttons";
+@import "breadcrumbs";
+@import "cards";
+@import "dropdown";
+@import "dropup";
+@import "header";
+@import "fixed-plugin";
+@import "forms/forms";
+@import "footer";
+@import "gradients";
+@import "info-areas";
+@import "misc";
+@import "navbar";
+@import "navbar-vertical";
+@import "nav";
+@import "pagination";
+@import "popovers";
+@import "progress";
+@import "rtl";
+@import "social-buttons";
+@import "tables";
+@import "timeline";
+@import "tilt";
+@import "tooltips";
+@import "typography";
+
+// Plugins
+@import "plugins/free/plugins";
+:root {
+    --bg-light-color: #80AF81;
+    --bg-top-nav: #D6EFD8;
+    --bg-dark-body-color: #323432;
+    --bg-dark-top-nav: #1b1d1bc2;
+    --text-dark-top-nav: #ffff;
+    --text-light: #ffff;
+}
+
+body {
+    background-color: var(--bg-light-color);
+}
+
+.top-nav {
+    background-color: var(--bg-top-nav);
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.search-button {
+    display: flex;
+}
+
+.navigation {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    background-color: var(--bg-top-nav);
+    width: 60%;
+    border-radius: 10px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.close-fill {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.vector {
+    background-color: black;
+}
+
+.search-input {
+    border: none;
+    background-color: var(--bg-top-nav);
+}
+
+.search-input:active {
+    border: none;
+}
+
+.dark-mode {
+    background-color: var(--bg-dark-color);
+}
+
+.dark-mode-top-nav {
+    background-color: var(--bg-dark-body-color);
+    color: var(--text-dark-top-nav);
+}
+
+.navigation-dark {
+    background-color: var(--bg-dark-body-color);
+}
+
+.sidenav {
+    background-color: var(--bg-top-nav);
+    height: 100vh;
+}
+
+.list-unstyled:hover {
+    color: white;
+    background-color: var(--bg-dark-top-nav);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.list-unstyled a:hover {
+    color: var(--text-light);
+}
+
+.table-container {
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.notifications {
+    cursor: pointer
+}
+
+.notifications-list {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .top-nav {
+        background-color: var(--bg-top-nav);
+        width: 100%;
+        height: 60px;
+        margin-top: 10px;
+    }
+}

@@ -1,25 +1,61 @@
-{# Restaurant-Dashboard
-Develop a responsive and interactive dashboard for university residence staff using HTML, CSS, JavaScript, and a chosen framework (Bootstrap or Tailwind). The dashboard should provide functionalities like:
-Data Visualization: Utilize charts and graphs (e.g., bar charts, pie charts) to represent residence data like occupancy rates, room types, and maintenance requests. Consider libraries like Chart.js or D3.js.
-Room Management: Display a list of rooms with details like resident information, room status (occupied, vacant, under maintenance), and basic amenities. Allow filtering and sorting options.
-Maintenance Requests: Provide a section to view and manage maintenance requests submitted by residents. Include functionalities like filtering by room, status (pending, ongoing, completed), and adding notes.
-Alerts and Notifications: Display important alerts and notifications for staff, such as upcoming room inspections, maintenance deadlines, or urgent resident requests.
-Theme Switcher: Implement a feature that allows staff to switch between different themes (light/dark or custom colors) using browser storage (cookies or local storage).
-Technical Considerations:
+{
+Project Overview
+The Residence Dashboard is a responsive web application designed for university residence staff. It helps manage rooms, track maintenance, and display notifications.
 
-HTML: Leverage Semantic HTML for improved accessibility and SEO.
-CSS:
-Utilize CSS Grid for a well-organized and responsive layout.
-Integrate a CSS framework like Bootstrap to streamline development and provide pre-built components.
-Employ SASS for efficient and maintainable CSS code with mixins, functions, variables, and partials.
-JavaScript/jQuery:
-Implement interactive elements using advanced JavaScript features like object-oriented programming and ES6 syntax.
-Utilize jQuery for DOM manipulation and Ajax requests to fetch data from a mock API simulating the residence management system's backend.
-Charting Libraries: Choose a suitable library like Chart.js or D3.js to create visualizations for residence data.
-Project Deliverables:
+Installation
 
-Functional Dashboard: A fully responsive and interactive dashboard showcasing the outlined functionalities.
-Clean and Commented Code: Well-structured and documented codebase using HTML, CSS, JavaScript, and chosen libraries.
-Mock API Integration (Optional): A basic mock API (local JSON file) to simulate data retrieval.
-Project Documentation: A brief document outlining the project setup, technical choices, usage instructions, and any external libraries used.
+Clone the Repository:
+git clone <repository-url>
+cd residence-dashboard
+
+Install Dependencies:
+npm install
+
+External Libraries
+Bootstrap: For responsive design.
+Chart.js: For charts and graphs.
+FontAwesome: For icons.
+
+Technical Choices
+
+HTML & CSS
+Semantic HTML: Improves accessibility and SEO.
+Bootstrap: Provides a grid system and styled components.
+Custom CSS: For specific styling needs.
+
+JavaScript
+ES6 Syntax: For modern, clean code.
+jQuery: Simplifies DOM manipulation.
+Chart.js: For creating interactive charts.
+
+Usage Instructions
+
+Dashboard Features
+Data Visualization:
+
+Room Types Chart: Displays the distribution of room types.
+Maintenance Requests Chart: Shows requests over time.
+Occupancy Rates Chart: Illustrates occupancy rates by floor.
+Room Management:
+
+Room List: View details, including status and amenities.
+Filters: Sort by status or amenities.
+Maintenance Requests:
+
+Request List: View current requests.
+Manage Requests: Update statuses and add notes.
+Notifications:
+
+Alerts: Access important notifications.
+Toggle: Click the icon to view/hide alerts.
+Theme Switcher:
+
+Toggle Themes: Switch between light and dark themes.
+Persistent Preference: Saves theme choice in local storage.
+
+Future Improvements
+Real API Integration: Connect to a backend service.
+User Roles: Implement different access levels.
+Enhanced Features: Add detailed analytics and reporting.
+
 }
